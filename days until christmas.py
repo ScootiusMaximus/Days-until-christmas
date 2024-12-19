@@ -26,6 +26,9 @@ Clock = pygame.time.Clock()
 tree = pygame.image.load('xmas tree smol.jpg')
 troll1 = pygame.image.load('troll xmas smol.png')
 troll2 = troll1
+icon = pygame.surface.Surface((50,50))
+icon.fill((242,242,242))
+pygame.display.set_icon(icon)
 #initialisations, including a clock
 
 monthData = [31,28,31,30,31,30,31,31,30,31,30,31]
@@ -218,6 +221,5 @@ while True:
             if event.key == pygame.K_ESCAPE:
                 go_quit()
 
-    #YOUR CODE HERE
     timesData = times_left()
     show_textboxes()
